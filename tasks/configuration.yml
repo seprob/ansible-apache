@@ -1,0 +1,6 @@
+---
+
+- name: copy template for Apache main configuration
+  template:
+    src: apache2.conf.j2
+    dest: /etc/apache2/apache2.conf
