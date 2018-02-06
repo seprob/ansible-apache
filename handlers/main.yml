@@ -1,0 +1,6 @@
+---
+
+- name: ensure an Apache is restarted
+  systemd:
+    name: apache2
+    state: restarted

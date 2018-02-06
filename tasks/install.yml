@@ -5,3 +5,10 @@
     name: apache2
     update_cache: yes
     state: latest
+  notify:
+    - ensure an Apache is restarted
+
+- name: ensure the Apache is enabled
+  service:
+    name: apache2
+    enabled: yes

@@ -1,0 +1,11 @@
+---
+
+galaxy_info:
+  author: seprob
+  description: An Ansible role for installing Apache HTTP server.
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+  galaxy_tags:
+    - http
