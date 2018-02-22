@@ -6,3 +6,19 @@
     dest: /etc/apache2/apache2.conf
   notify:
     - ensure an Apache is restarted
+- name: enable Apache modules
+  apache2_module:
+    state: present
+    name: "{{ item }}"
+  with_items:
+    - "{{ apache_enable_modules }}"
+  notify:
+    - ensure an Apache is restarted
+- name: disable Apache modules
+  apache2_module:
+    state: absent
+    name: "{{ item }}"
+  with_items:
+    - "{{ apache_disable_modules }}"
+  notify:
+    - ensure an Apache is restarted
