@@ -36,7 +36,7 @@ Setting this parameter to 45 means that the server has a maximum of 45 second to
 apache_keepalive: On
 ```
 
-If you set this directive to "On" it will allow each connection to rmain open to handle multiple requests from the same client.
+If you set this directive to "On" it will allow each connection to remain open to handle multiple requests from the same client.
 
 ```
 apache_max_keep_alive_requests: 100
@@ -48,4 +48,4 @@ Controls how many separate requests each connection will handle before ending.
 apache_keep_alive_timeout: 5
 ```
 
-How to wait for the next request after finishing the last one.
+How long to wait for the next request after finishing the last one.
