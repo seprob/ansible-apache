@@ -5,3 +5,7 @@ apache_group: ${APACHE_RUN_GROUP}
 apache_server_tokens: Prod
 apache_enable_modules: []
 apache_disable_modules: []
+apache_timeot: 45
+apache_keepalive: "On"
+apache_max_keep_alive_requests: 100
+apache_keep_alive_timeout: 5
